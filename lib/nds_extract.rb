@@ -21,7 +21,8 @@ inner_len = directors_database[row_index][:movies].length
 
 while inner_index < inner_len do
 #good
-pp grand_total
+pp grand_total1
+pp grand_total2
 
 if directors_database[row_index][:name] == directors_database[0][:name] 
 dir_name1 =  "#{directors_database[row_index][:name]}"
