@@ -3,7 +3,8 @@ require 'directors_database'
 
 def directors_totals(nds)
 
-grand_total = 0
+grand_total1 = 0
+grand_total2 = 0
 row_index = 0
    
 while row_index < directors_database.length do
@@ -23,13 +24,13 @@ while inner_index < inner_len do
 pp grand_total
 
 if directors_database[row_index][:name] == directors_database[0][:name] 
-dir_name =  "#{directors_database[row_index][:name]}"
-grand_total += directors_database[row_index][:movies][inner_index][:worldwide_gross]
+dir_name1 =  "#{directors_database[row_index][:name]}"
+grand_total1 += directors_database[row_index][:movies][inner_index][:worldwide_gross]
 end
 
 if directors_database[row_index][:name] == directors_database[1][:name] 
-dir_name =  "#{directors_database[row_index][:name]}"
-grand_total += directors_database[row_index][:movies][inner_index][:worldwide_gross]
+dir_name2 =  "#{directors_database[row_index][:name]}"
+grand_total2 += directors_database[row_index][:movies][inner_index][:worldwide_gross]
 end
 
   inner_index += 1 
@@ -41,8 +42,8 @@ end
   row_index += 1 
 end
 result = {
-dir_name => grand_total,
-
+dir_name1 => grand_total1,
+dir_name2 => grand_total2
    
 }
 # pp directors_database
