@@ -25,6 +25,8 @@ pp grand_total
 if directors_database[row_index][:name] == directors_database[0][:name] 
 dir_name =  "#{directors_database[row_index][:name]}"
 grand_total += directors_database[row_index][:movies][inner_index][:worldwide_gross]
+
+  inner_index += 1 
 end
 
 if directors_database[row_index][:name] == directors_database[1][:name] 
