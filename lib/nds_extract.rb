@@ -9,7 +9,7 @@ row_index = 0
 while row_index < directors_database.length do
 #good, iterates 9 times
 
-#column_index = 0
+column_index = 0
 
 while column_index < directors_database[row_index].length do
 #good, iterates 2 times
