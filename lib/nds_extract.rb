@@ -41,6 +41,11 @@ dir_name3 =  "#{directors_database[row_index][:name]}"
 grand_total3 += directors_database[row_index][:movies][inner_index][:worldwide_gross]
 end
 
+if directors_database[row_index][:name] == directors_database[4][:name] 
+dir_name4 =  "#{directors_database[row_index][:name]}"
+grand_total4 += directors_database[row_index][:movies][inner_index][:worldwide_gross]
+end
+
   inner_index += 1 
 end
 
