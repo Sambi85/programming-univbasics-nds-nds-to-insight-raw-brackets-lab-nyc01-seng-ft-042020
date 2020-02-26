@@ -5,15 +5,17 @@ def directors_totals(nds)
 
 grand_total1 = 0
 grand_total2 = 0
+grand_total3 = 0
+grand_total4 = 0
+grand_total5 = 0
+grand_total6 = 0
+grand_total7 = 0
+grand_total8 = 0
+grand_total9 = 0
 row_index = 0
    
 while row_index < directors_database.length do
 #good, iterates 9 times
-
-#column_index = 0
-
-#while column_index < directors_database[row_index].length do
-#good, iterates 2 times
 
 inner_index = 0
 inner_len = directors_database[row_index][:movies].length
@@ -37,16 +39,18 @@ end
   inner_index += 1 
 end
 
- # column_index += 1
-#end
-
   row_index += 1 
 end
 result = {
 dir_name1 => grand_total1,
-dir_name2 => grand_total2
-   
+dir_name2 => grand_total2,
+dir_name3 => grand_total3,
+dir_name4 => grand_total4,
+dir_name5 => grand_total5,
+dir_name6 => grand_total6,
+dir_name7 => grand_total7,
+dir_name8 => grand_total8,
+dir_name9 => grand_total9
 }
-# pp directors_database
   pp result
 end
