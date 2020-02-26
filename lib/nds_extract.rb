@@ -11,7 +11,7 @@ while row_index < directors_database.length do
 
 #column_index = 0
 
-#while column_index < directors_database[row_index].length do
+while column_index < directors_database[row_index].length do
 #good, iterates 2 times
 
 inner_index = 0
@@ -30,8 +30,8 @@ end
   inner_index += 1 
 end
 
- # column_index += 1
-#end
+  column_index += 1
+end
 
   row_index += 1 
 end
