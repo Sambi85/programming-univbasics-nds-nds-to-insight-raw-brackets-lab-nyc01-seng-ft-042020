@@ -22,7 +22,7 @@ while inner_index < inner_len do
 #good
 pp grand_total
 
-if directors_database[row_index][:name] == directors_database[1][:name] 
+if directors_database[row_index][:name] == directors_database[0][:name] 
 dir_name =  "#{directors_database[row_index][:name]}"
 grand_total += directors_database[row_index][:movies][inner_index][:worldwide_gross]
 end
